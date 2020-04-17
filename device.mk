@@ -115,8 +115,8 @@ PRODUCT_PACKAGES += \
     init.mt6765.rc \
     init.safailnet.rc \
     fstab.mt6765 \
-    zram.sh \
-    perf_profile.sh
+    perf_profile.sh \
+    set_zram.sh
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
