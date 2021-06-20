@@ -44,7 +44,7 @@ TARGET_SCREEN_WIDTH := 720
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    GoogleCameraGo
+    CameraGo
 
 PRODUCT_COPY_FILES += \
   $(DEVICE_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
@@ -102,7 +102,6 @@ PRODUCT_PACKAGES += \
     init.mt6765.rc \
     init.safailnet.rc \
     fstab.mt6765 \
-	ktweak.rc \
     zram.sh \
     perf_profile.sh
 
@@ -161,8 +160,8 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo
-	
-# Telephony Jars
+
+# Telephony
 PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
@@ -170,7 +169,26 @@ PRODUCT_BOOT_JARS += \
     mediatek-ims-common \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common 
+    mediatek-telephony-common    
+
+PRODUCT_PACKAGES += \
+    ImsServiceBase
+
+# RcsService
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
+# Reduce system image size by limiting java debug info.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
+# Always preopt extracted APKs to prevent extracting out of the APK
+# for gms modules.
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
