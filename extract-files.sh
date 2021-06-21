@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=RMX2020
+export DEVICE=RMX1941
 export VENDOR=realme
 
 # Load extract_utils and do some sanity checks
@@ -38,15 +38,11 @@ source "${HELPER}"
 CLEAN_VENDOR=true
 
 SECTION=
-KANG=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
-                ;;
-        -k | --kang )
-                KANG="--kang"
                 ;;
         -s | --section )
                 SECTION="${2}"; shift
@@ -66,7 +62,6 @@ fi
 # Initialize the helper for device
 setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" true "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
-        "${KANG}" --section "${SECTION}"
+extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 "${MY_DIR}/setup-makefiles.sh"

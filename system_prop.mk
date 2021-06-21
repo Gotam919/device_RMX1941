@@ -23,7 +23,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Display
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=480
 	
 # Hardware Acceleration
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX2020
+DEVICE_PATH := device/realme/RMX1941
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/realme/RMX2020/RMX2020-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/RMX1941/RMX1941-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Parts
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 28
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
@@ -38,7 +38,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_HEIGHT := 1560
 TARGET_SCREEN_WIDTH := 720
 
 # Audio
@@ -56,16 +56,14 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX2020
-
+# Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml \
+    frameworks/native/data/etc/android.software.controls.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.controls.xml \
+    $(DEVICE_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -83,8 +81,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6768.rc \
-    fstab.mt6768 \
+    init.mt6765.rc \
+    fstab.mt6765 \
     perf_profile.sh
 
 # Keylayouts
@@ -100,7 +98,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.RMX2020
+    android.hardware.light@2.0-service.RMX1941
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -116,11 +114,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NotchBarKiller
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.controls.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.controls.xml \
-    $(DEVICE_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
 # Properties
 -include $(DEVICE_PATH)/system_prop.mk
