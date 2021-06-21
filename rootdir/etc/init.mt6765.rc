@@ -95,6 +95,16 @@ on boot
     # Update touchscreen firmware
     write /proc/touchpanel/tp_fw_update 1
 
+service ktweak /vendor/bin/sh /system/bin/ktweak.sh
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot
+	
+on property:sys.boot_completed=1
+    start ktweak
+
 on property:sys.boot_completed=1
     # Toggle airplane mode on and off on boot to enable volte.
     # This hack needs ImsInit commit to request ims on boot to work properly
