@@ -102,6 +102,7 @@ PRODUCT_PACKAGES += \
     phh-remotectl.sh \
     phh-securize.sh \
     rw-system.sh \
+    zram.sh \
     perf_profile.sh
 
 # Keylayouts

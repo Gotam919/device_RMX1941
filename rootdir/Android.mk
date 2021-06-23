@@ -79,3 +79,9 @@ LOCAL_MODULE := rw-system.sh
 LOCAL_SRC_FILES := bin/rw-system.sh
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := zram.sh
+LOCAL_SRC_FILES := bin/zram.sh
+LOCAL_MODULE_CLASS := EXECUTABLES
+include $(BUILD_PREBUILT)

@@ -103,7 +103,17 @@ service ktweak /vendor/bin/sh /system/bin/ktweak.sh
     oneshot
 	
 on property:sys.boot_completed=1
-    start ktweak
+    start ktweak.sh
+	
+service zram /vendor/bin/sh /system/bin/zram.sh
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot
+	
+on property:sys.boot_completed=1
+    start zram.sh
 
 on property:sys.boot_completed=1
     # Toggle airplane mode on and off on boot to enable volte.
