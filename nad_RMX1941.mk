@@ -25,14 +25,14 @@ $(call inherit-product, device/realme/RMX1941/device.mk)
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # NusantaraProject stuff
-NAD_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 720
+ALLOW_MISSING_DEPENDENCIES=true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_RMX1941
 PRODUCT_DEVICE := RMX1941
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme G70 Series
+PRODUCT_MODEL := Realme C2
 PRODUCT_MANUFACTURER := realme
 
 # Build info
