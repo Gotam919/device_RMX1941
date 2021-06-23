@@ -96,6 +96,12 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc \
     fstab.mt6765 \
 	ktweak.sh \
+    phh-on-boot.sh \
+    phh-on-data.sh \
+    phh-prop-handler.sh \
+    phh-remotectl.sh \
+    phh-securize.sh \
+    rw-system.sh \
     perf_profile.sh
 
 # Keylayouts
