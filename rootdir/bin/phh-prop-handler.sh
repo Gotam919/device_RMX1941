@@ -78,7 +78,7 @@ if [ "$1" == "persist.sys.phh.oppo.dt2w" ]; then
         exit 1
     fi
 
-    echo "$prop_value" >/proc/touchpanel/double_tap_enable
+    echo 1 >/proc/touchpanel/double_tap_enable
     exit
 fi
 
