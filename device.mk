@@ -15,6 +15,7 @@
 #
 
 DEVICE_PATH := device/realme/RMX1941
+ALLOW_MISSING_DEPENDENCIES := true
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
