@@ -1,2 +1,34 @@
 # Allow system_server for usb and smart charging nodes
 allow system_server sysfs_battery_supply:file { getattr open read write };
+
+# The DhcpClient and WifiWatchdog use packet_sockets
+allow system_server self:packet_socket create_socket_perms_no_ioctl;
+
+binder_call(system_server, wificond)
+binder_call(system_server, wpantund)
+
+hal_client_domain(system_server, hal_wifi)
+hal_client_domain(system_server, hal_wifi_hostapd)
+hal_client_domain(system_server, hal_wifi_supplicant)
+
+# Manage /data/misc/wifi.
+allow system_server wifi_data_file:dir create_dir_perms;
+allow system_server wifi_data_file:file create_file_perms;
+
+userdebug_or_eng(`set_prop(system_server, wifi_log_prop)')
+
+# Read wifi.interface
+get_prop(system_server, wifi_prop)
+
+allow system_server wifinl80211_service:service_manager find;
+
+# Read service.adb.tls.port, persist.adb.wifi. properties
+get_prop(system_server, adbd_prop)
+
+# Allow WifiService to start, stop, and read wifi-specific trace events.
+allow system_server debugfs_tracing_instances:dir search;
+allow system_server debugfs_wifi_tracing:dir search;
+allow system_server debugfs_wifi_tracing:file rw_file_perms;
+
+allow system_server apex_wifi_data_file:dir create_dir_perms;
+allow system_server apex_wifi_data_file:file create_file_perms;

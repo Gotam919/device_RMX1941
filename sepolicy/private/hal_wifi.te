@@ -1,0 +1,3 @@
+type mtk_hal_wifi, hal_wifi;
+
+allow mtk_hal_wifi vendor_default_prop:property_service { set };
