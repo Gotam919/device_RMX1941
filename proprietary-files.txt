@@ -18,6 +18,10 @@ etc/init/init.vtservice.rc
 framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-ims-legacy.jar
 framework/mediatek-ims-wwop-common.jar
+framework/android.hidl.manager-V1.0-java \
+framework/vendor.qti.qcril.am-V1.0-java \
+framework/vendor.qti.hardware.radio.am-V1.0-java \
+framework/android.hardware.wifi.hostapd-V1.0-java \
 lib/libmtk_vt_service.so
 lib/libmtk_vt_wrapper.so
 lib/libmtkaudio_utils.so
