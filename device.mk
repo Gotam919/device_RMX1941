@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
     init.mt6765.rc \
     init.safailnet.rc \
     fstab.mt6765 \
-	ktweak.sh \
+	ktweak.rc \
     phh-on-boot.sh \
     phh-on-data.sh \
     phh-prop-handler.sh \
