@@ -160,6 +160,16 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo
+	
+# Telephony Jars
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common 
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
