@@ -59,6 +59,9 @@ case $1 in
 	# Big cluster
 	echo 1 2050000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
 	echo 1 730000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
+	
+	# Fix delay notif
+	find . -type f -name '*gms*' -delete
 
 	# Little cluster
 	echo 0 2000000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
