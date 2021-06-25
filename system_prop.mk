@@ -38,7 +38,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.dbg.ims_volte_enable=1 
 	
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \

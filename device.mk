@@ -58,13 +58,6 @@ PRODUCT_COPY_FILES += \
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-	
-# Force enable voLTE, viLTE and voWIFI
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.dbg.ims_volte_enable=1 \
-	persist.dbg.volte_avail_ovr=1 \
-	persist.dbg.vt_avail_ovr=1 \
-	persist.dbg.wfc_avail_ovr=1 
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
