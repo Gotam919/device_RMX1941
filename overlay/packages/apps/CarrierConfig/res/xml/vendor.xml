@@ -70,10 +70,11 @@
         <boolean name="config_telephony_use_own_number_for_voicemail_bool" value="true"/>
     </carrier_config>
 	
-    <carrier_config mcc="404">
+    <carrier_config mcc="404" mnc="02,03,06,10,15,16,31,40,45,49,61,70,90,92,93,94,95,97,98">
         <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="405" mnc="51,52,53,54,55,56">
+        <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
 	<carrier_config mcc="460">
@@ -113,7 +114,7 @@
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
-
+	
     <carrier_config mcc="405" mnc="66">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
