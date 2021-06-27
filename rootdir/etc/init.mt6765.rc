@@ -35,7 +35,7 @@ on init
     write /sys/block/sdc/queue/nr_requests 256
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
-    setprop persist.vendor.vilte_support 0
+    setprop persist.vendor.vilte_support 1
 
     # Custom overrides that need to happen right on boot
     # Override vendor fstab
