@@ -1,5 +1,26 @@
+typeattribute system_app coredomain, mlstrustedsubject;
+
+app_domain(system_app)
+net_domain(system_app)
+binder_service(system_app)
+
 allow system_app proc_tp:dir search;
 allow system_app proc_tp:file rw_file_perms;
+
+allow system_app {
+  service_manager_type
+  -apex_service
+  -dnsresolver_service
+  -dumpstate_service
+  -installd_service
+  -iorapd_service
+  -lpdump_service
+  -netd_service
+  -vold_service
+  -default_android_service
+}:service_manager find;
+
+allow system_app default_android_hwservice:hwservice_manager find;
 
 dontaudit system_app {
   apex_service
