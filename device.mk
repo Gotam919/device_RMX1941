@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
 # Apns
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml \
-    $(DEVICE_PATH)/rootdir/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/spn-conf.xml
 	
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -99,22 +98,14 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc \
     fstab.mt6765 \
 	ktweak.rc \
-    phh-on-boot.sh \
-    phh-on-data.sh \
-    phh-prop-handler.sh \
-    phh-remotectl.sh \
-    phh-securize.sh \
-    rw-system.sh \
     zram.sh \
     perf_profile.sh
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/idc/AVRCP.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/AVRCP.idc \
-    $(DEVICE_PATH)/idc/qwerty.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/qwerty.idc \
-    $(DEVICE_PATH)/idc/qwerty2.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/qwerty2.idc \
-    $(DEVICE_PATH)/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl \
-    $(DEVICE_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl
+    $(DEVICE_PATH)/keylayout/AVRCP.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/AVRCP.kl \
+    $(DEVICE_PATH)/keylayout/Generic.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Generic.kl \
+    $(DEVICE_PATH)/keylayout/qwerty.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/qwerty.kl
 
 # KPOC
 PRODUCT_PACKAGES += \

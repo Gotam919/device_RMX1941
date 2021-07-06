@@ -47,42 +47,6 @@ LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := phh-on-boot.sh
-LOCAL_SRC_FILES := bin/phh-on-boot.sh
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := phh-on-data.sh
-LOCAL_SRC_FILES := bin/phh-on-data.sh
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := phh-prop-handler.sh
-LOCAL_SRC_FILES := bin/phh-prop-handler.sh
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := phh-remotectl.sh
-LOCAL_SRC_FILES := bin/phh-remotectl.sh
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := phh-securize.sh
-LOCAL_SRC_FILES := bin/phh-securize.sh
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := rw-system.sh
-LOCAL_SRC_FILES := bin/rw-system.sh
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := zram.sh
 LOCAL_SRC_FILES := bin/zram.sh
 LOCAL_MODULE_CLASS := EXECUTABLES
