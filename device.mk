@@ -144,10 +144,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.mt6765
 
-# Properties
--include $(DEVICE_PATH)/system_prop.mk
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
