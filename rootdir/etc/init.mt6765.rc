@@ -1,5 +1,4 @@
 import /system/etc/init/init.safailnet.rc
-import /system/etc/init/ktweak.rc
 
 on early-init 
      start adbd
@@ -95,10 +94,6 @@ on boot
 
     # Update touchscreen firmware
     write /proc/touchpanel/tp_fw_update 1
-	
-	# Ktweaks
-	chmod 0644 /system/etc/init/ktweak.rc
-	start ktweak.rc
 	
 service zram /vendor/bin/sh /system/bin/zram.sh
     class late_start
