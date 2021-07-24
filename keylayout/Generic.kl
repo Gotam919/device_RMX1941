@@ -229,7 +229,7 @@ key 201   MEDIA_PAUSE
 key 207   MEDIA_PLAY
 key 208   MEDIA_FAST_FORWARD
 # key 209 "KEY_BASSBOOST"
-# key 210 "KEY_PRINT"
+key 210 KEY_PRINT
 # key 211 "KEY_HP"
 key 212   CAMERA
 key 213   MUSIC
@@ -408,8 +408,6 @@ key 522   STAR
 key 523   POUND
 key 580   APP_SWITCH
 key 582   VOICE_ASSIST
-# Linux KEY_ASSISTANT
-key 583   ASSIST
 
 # Keys defined by HID usages
 key usage 0x0c006F BRIGHTNESS_UP

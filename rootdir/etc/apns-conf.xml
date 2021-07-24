@@ -14914,6 +14914,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IMS"
@@ -15044,6 +15045,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IMS"
@@ -15172,6 +15174,7 @@
       type="mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone Connect"
@@ -15190,6 +15193,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IDEA"
@@ -15260,6 +15264,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Idea_Punjab MMS"
@@ -15327,6 +15332,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IMS"
@@ -15461,6 +15467,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone Connect"
@@ -15641,6 +15648,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="AIRCEL MMS"
@@ -15705,6 +15713,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IMS"
@@ -15955,6 +15964,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
   
 <!-- ODM_HQ_EDIT -->
@@ -16062,6 +16072,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IMS"
@@ -16398,6 +16409,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Cellone_North MMS"
@@ -16792,7 +16804,15 @@
       mmsport="8080"
       type="mms"
   />
-
+  <apn carrier="IMS"
+       mcc="404"
+       mnc="78"
+       apn="ims"
+       type="ims"
+       protocol="IPV4V6"
+       roaming_protocol="IPV4V6"
+       network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20"
+  />
   <apn carrier="bsnlmms"
       mcc="404"
       mnc="79"
@@ -16965,6 +16985,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Reliance RTel MMS"
@@ -17014,6 +17035,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IDEA"
@@ -17083,6 +17105,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IDEA"
@@ -17111,6 +17134,7 @@
     roaming_protocol="IPV4V6"
     type="ims"
     read_only="true"
+    network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
   <apn carrier="IDEA MMS"
       mcc="404"
@@ -18344,6 +18368,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone MMS"
@@ -18374,6 +18399,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IDEA"
@@ -18442,6 +18468,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone MMS"
@@ -18472,6 +18499,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone MMS"
@@ -18502,6 +18530,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone MMS"
@@ -18532,6 +18561,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone MMS"
@@ -18562,6 +18592,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone MMS"
@@ -18592,6 +18623,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="Vodafone MMS"
@@ -18622,6 +18654,7 @@
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IDEA"
@@ -18643,6 +18676,16 @@
       type="mms"
       mtu="1358"
   />
+  <apn carrier="IMS"
+      mcc="405"
+      mnc="799"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
+  />
+  
   <apn carrier="AIRCEL"
       mcc="405"
       mnc="800"
@@ -20289,6 +20332,16 @@
       type="mms"
   />
 
+  <apn carrier="IMS"
+       mcc="405"
+       mnc="908"
+       apn="ims"
+       type="ims"
+       protocol="IPV4V6"
+       roaming_protocol="IPV4V6"
+       network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20"
+  />
+
   <apn carrier="IDEA"
       mcc="405"
       mnc="909"
@@ -20296,6 +20349,7 @@
       type="default,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
   />
 
   <apn carrier="IDEA MMS"
@@ -20306,6 +20360,16 @@
       mmsproxy="10.4.42.15"
       mmsport="8080"
       type="mms"
+  />
+
+  <apn carrier="IMS"
+       mcc="405"
+       mnc="909"
+       apn="ims"
+       type="ims"
+       protocol="IPV4V6"
+       roaming_protocol="IPV4V6"
+       network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20"
   />
 
   <apn carrier="IDEA"
@@ -20327,6 +20391,16 @@
       type="mms"
   />
 
+  <apn carrier="IMS"
+       mcc="405"
+       mnc="910"
+       apn="ims"
+       type="ims"
+       protocol="IPV4V6"
+       roaming_protocol="IPV4V6"
+       network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20"
+  />
+
   <apn carrier="IDEA"
       mcc="405"
       mnc="911"
@@ -20344,6 +20418,16 @@
       mmsproxy="10.4.42.15"
       mmsport="8080"
       type="mms"
+  />
+
+  <apn carrier="IMS"
+       mcc="405"
+       mnc="911"
+       apn="ims"
+       type="ims"
+       protocol="IPV4V6"
+       roaming_protocol="IPV4V6"
+       network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20"
   />
 
   <apn carrier="Uninor GPRS"
@@ -28573,7 +28657,10 @@ difference in APN profile of MyRepublic and StarHub. it was causing ID miss matc
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
+   <!-- #ifdef ODM_HQ_EDIT -->
+   <!-- wangyong@ODM_HQ.NW.VI need.241845, 2021/03/31,Delete duplicate idea operator IMS APN-->
    <!-- chetan.chauhan@PSW.NW.IMS VENDOR_EDIT add IMS for Idea India start  -->
+   <!--
  <apn carrier="IMS"
       mcc="404"
       mnc="22"
@@ -28750,87 +28837,7 @@ difference in APN profile of MyRepublic and StarHub. it was causing ID miss matc
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
+    -->
 <!-- chetan.chauhan@PSW.NW.IMS VENDOR_EDIT add IMS for Idea India end -->
-
-<!-- #ifndef ODM_WT_EDIT -->
-<!-- Xingyu.Lin@ODM_WT.NW.IMS.1941873, 2019/12/10, add IMS for Idea India-->
-    <apn carrier="IMS"
-        mcc="405"
-        mnc="847"
-        apn="ims"
-        type="ims"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
-    />
-
-    <apn carrier="IMS"
-        mcc="405"
-        mnc="851"
-        apn="ims"
-        type="ims"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
-    />
-
-    <apn carrier="IMS"
-        mcc="405"
-        mnc="908"
-        apn="ims"
-        type="ims"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
-    />
-
-    <apn carrier="IMS"
-        mcc="405"
-        mnc="909"
-        apn="ims"
-        type="ims"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
-    />
-
-    <apn carrier="IMS"
-        mcc="405"
-        mnc="910"
-        apn="ims"
-        type="ims"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
-    />
-
-    <apn carrier="IMS"
-        mcc="405"
-        mnc="911"
-        apn="ims"
-        type="ims"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19"
-    />
-	
-    <apn carrier="Vodafone Connect"
-        mcc="404"
-        mnc="15"
-        apn="www"
-        type="default,supl,ims,xcap,hipri,fota,cbs,mms"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-    />
-
-    <apn carrier="IMS"
-        mcc="404"
-        mnc="15"
-        apn="ims"
-        type="default,supl,ims,xcap,hipri,fota,cbs,mms"
-        protocol="IPV4"
-        roaming_protocol="IPV4"
-    />
-<!-- #endif ODM_WT_EDIT -->
-
+    <!-- #endif ODM_HQ_EDIT-->
 </apns>
