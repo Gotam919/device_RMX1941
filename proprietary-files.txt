@@ -1,3 +1,4 @@
+@ -1,17 +1,73 @@
 #APNs
 etc/apns-conf.xml:product/etc/apns-conf.xml
 
@@ -5,10 +6,7 @@ etc/apns-conf.xml:product/etc/apns-conf.xml
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
-
-# Kernel Power Off Charging (KPOC)
+# Kernel Power Offline Charging (KPOC)
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
@@ -76,3 +74,9 @@ priv-app/TeeService/lib/arm64/libTeeServiceJni.so
 
 # Soter
 -app/SoterService/SoterService.apk
+
+# Wifi-Hotspot
+framework/android.hidl.manager-V1.0-java
+framework/vendor.qti.qcril.am-V1.0-java
+framework/vendor.qti.hardware.radio.am-V1.0-java
+framework/android.hardware.wifi.hostapd-V1.0-java
