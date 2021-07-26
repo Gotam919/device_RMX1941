@@ -6,7 +6,7 @@ INFO=/data/adb/modules/zram_config/zram_config-files
 function round() {
   printf "%.${2}f" "${1}"
 }
-    sleep 30
+    sleep 10
     CONFIG=1
     TOTAL_RAM=$(awk '/^MemTotal:/{print $2}' /proc/meminfo) 2>/dev/null
     alias SWAPT='grep -i SwapTotal /proc/meminfo | tr -d "[a-zA-Z :]"'
@@ -64,9 +64,6 @@ function enable_swap() {
 		"zstd")
 		alg="zstd"
 		;;
-		*)
-		alg="lz4"
-		;;
 		esac
 	${swff} ${zram_dev} > /dev/null 2>&1
 	write /sys/block/${zram}/comp_algorithm ${alg}
@@ -99,7 +96,7 @@ function enable_swap() {
 	setprop zram.disksize ${disksz}
 	write /proc/sys/vm/swappiness 100
 	write /proc/sys/vm/swap_ratio_enable 1
-	write /proc/sys/vm/swap_ratio 70
+	write /proc/sys/vm/swap_ratio 60
 }
 function disable_swap() {
     for zram in `blkid | grep swap | awk -F[/:] '{print $4}'`; do {
