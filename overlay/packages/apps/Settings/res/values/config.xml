@@ -23,6 +23,13 @@
 
     <!-- Whether to show min refresh rate in display settings -->
     <bool name="config_show_min_refresh_rate_switch">true</bool>
+	    <!-- Smart Charging -->
+		
+    <bool name="config_deviceSupportSmartCharging">true</bool>
+
+    <!-- Smart Cutoff -->
+    <bool name="config_deviceSupportSmartCutoff">true</bool>
+	
 </resources>
 
 <!-- Battery Health -->
