@@ -43,7 +43,10 @@ TARGET_SCREEN_WIDTH := 720
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
+    audio.a2dp.default
+	
+# Audio
+PRODUCT_PACKAGES += \
     CameraGo
 
 PRODUCT_COPY_FILES += \
