@@ -2,3 +2,5 @@ type mwis_service, service_manager_type;
 type mtk_ims_service, service_manager_type;
 type wfo_service, service_manager_type;
 type vtservice_service, service_manager_type;
+# App Lock
+type applock_service, system_api_service, system_server_service, service_manager_type;
