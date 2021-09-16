@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_RMX1941.mk
+    $(LOCAL_DIR)/octavi_RMX1941.mk
 	
 COMMON_LUNCH_CHOICES := \
-        corvus_RMX1941-eng \
-        corvus_RMX1941-user \
-        corvus_RMX1941-userdebug
+        octavi_RMX1941-eng \
+        octavi_RMX1941-user \
+        octavi_RMX1941-userdebug
