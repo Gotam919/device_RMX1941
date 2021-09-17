@@ -1,7 +1,5 @@
 type mtk_hal_mms, domain;
 type mtk_hal_mms_hwservice, hwservice_manager_type;
-type mtk_hal_audio, domain;
-typeattribute mtk_hal_audio hal_broadcastradio_client;
 
 # Allow untrusted_app_29 to find mtk_hal_mms_hwservice
 allow { appdomain -isolated_app } mtk_hal_mms_hwservice:hwservice_manager find;
