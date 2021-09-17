@@ -32,6 +32,3 @@ allow system_server debugfs_wifi_tracing:file rw_file_perms;
 
 allow system_server apex_wifi_data_file:dir create_dir_perms;
 allow system_server apex_wifi_data_file:file create_file_perms;
-
-# App Lock
-add_service(system_server, applock_service)
