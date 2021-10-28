@@ -17,6 +17,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common crdroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -26,9 +27,6 @@ $(call inherit-product, device/realme/RMX1941/device.mk)
 
 # crdroid stuff
 TARGET_BOOT_ANIMATION_RES := 720
-ALLOW_MISSING_DEPENDENCIES=true
-Crdroid_DEVICE_MAINTAINER := Gotam™
-scr_resolution := 720
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX1941
@@ -47,4 +45,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+    ro.build.fingerprint=$(BUILD_FINGERPRINT
+
+
+
