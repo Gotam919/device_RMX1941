@@ -27,7 +27,7 @@ $(call inherit-product, device/realme/RMX1941/device.mk)
 # crdroid stuff
 TARGET_BOOT_ANIMATION_RES := 720
 ALLOW_MISSING_DEPENDENCIES=true
-OCTAVI_DEVICE_MAINTAINER := Sundram™
+Crdroid_DEVICE_MAINTAINER := Gotam™
 scr_resolution := 720
 
 # Device identifier. This must come after all inclusions.
