@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1941.mk
+    $(LOCAL_DIR)/arrow_RMX1941.mk
 	
 COMMON_LUNCH_CHOICES := \
-        lineage_RMX1941-userdebug
+        arrow_RMX1941-userdebug
         
         
