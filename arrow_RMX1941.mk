@@ -19,17 +19,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common crdroid stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common arrow stuff.
+$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
 
 # Inherit from RMX1941 device makefile
 $(call inherit-product, device/realme/RMX1941/device.mk)
 
-# crdroid stuff
+# arrow stuff
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX1941
+PRODUCT_NAME := arrow_RMX1941
 PRODUCT_DEVICE := RMX1941
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme C2
