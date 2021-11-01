@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common arrow stuff.
-$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from RMX1941 device makefile
 $(call inherit-product, device/realme/RMX1941/device.mk)
