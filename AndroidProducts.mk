@@ -15,11 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_RMX1941.mk
+    $(LOCAL_DIR)/fluid_RMX1941.mk
 	
 COMMON_LUNCH_CHOICES := \
-        arrow_RMX1941-eng \
-        arrow_RMX1941-user \
-        arrow_RMX1941-userdebug
+        fluid_RMX1941-eng \
+        fluid_RMX1941-user \
+        fluid_RMX1941-userdebug
         
         
