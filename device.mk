@@ -26,8 +26,8 @@ $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+
+
 
 PRODUCT_SHIPPING_API_LEVEL := 28
 
